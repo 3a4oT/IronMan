@@ -45,6 +45,7 @@
 		FBB02F131F8B641E00EA75DA = {
 			isa = PBXGroup;
 			children = (
+				FBB02F291F8BA63700EA75DA /* .gitignore */,
 				FBB02F1E1F8B641F00EA75DA /* IronMan */,
 				FBB02F1D1F8B641F00EA75DA /* Products */,
 			);
@@ -64,7 +65,6 @@
 				FBB02F1F1F8B641F00EA75DA /* main.c */,
 				FBB02F261F8B6B5800EA75DA /* MutableArray.h */,
 				FBB02F271F8B6B5800EA75DA /* MutableArray.c */,
-				FBB02F291F8BA63700EA75DA /* .gitignore */,
 			);
 			path = IronMan;
 			sourceTree = "<group>";
