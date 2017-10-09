@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FBB02F201F8B641F00EA75DA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FBB02F1F1F8B641F00EA75DA /* main.c */; };
+		FBB02F281F8B6B5800EA75DA /* MutableArray.c in Sources */ = {isa = PBXBuildFile; fileRef = FBB02F271F8B6B5800EA75DA /* MutableArray.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		FBB02F1C1F8B641F00EA75DA /* IronMan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IronMan; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB02F1F1F8B641F00EA75DA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FBB02F261F8B6B5800EA75DA /* MutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutableArray.h; sourceTree = "<group>"; };
+		FBB02F271F8B6B5800EA75DA /* MutableArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MutableArray.c; sourceTree = "<group>"; };
+		FBB02F291F8BA63700EA75DA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				FBB02F1F1F8B641F00EA75DA /* main.c */,
+				FBB02F261F8B6B5800EA75DA /* MutableArray.h */,
+				FBB02F271F8B6B5800EA75DA /* MutableArray.c */,
+				FBB02F291F8BA63700EA75DA /* .gitignore */,
 			);
 			path = IronMan;
 			sourceTree = "<group>";
@@ -92,7 +99,7 @@
 				TargetAttributes = {
 					FBB02F1B1F8B641F00EA75DA = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -119,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB02F201F8B641F00EA75DA /* main.c in Sources */,
+				FBB02F281F8B6B5800EA75DA /* MutableArray.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +162,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -209,7 +217,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -231,18 +239,22 @@
 		FBB02F241F8B641F00EA75DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KY6K4LQ47;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		FBB02F251F8B641F00EA75DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KY6K4LQ47;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
