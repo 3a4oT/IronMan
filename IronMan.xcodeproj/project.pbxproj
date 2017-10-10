@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB2130811F8D271F00FC64EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FBB02F1C1F8B641F00EA75DA /* IronMan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IronMan; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB02F1F1F8B641F00EA75DA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FBB02F261F8B6B5800EA75DA /* MutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutableArray.h; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		FBB02F131F8B641E00EA75DA = {
 			isa = PBXGroup;
 			children = (
+				FB2130811F8D271F00FC64EE /* README.md */,
 				FBB02F291F8BA63700EA75DA /* .gitignore */,
 				FBB02F1E1F8B641F00EA75DA /* IronMan */,
 				FBB02F1D1F8B641F00EA75DA /* Products */,
