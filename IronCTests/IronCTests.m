@@ -78,7 +78,7 @@
     XCTAssertEqual(minInitialPower, 5);
     
     //Expect 1
-    int s8[] = { -0}; //=> 5
+    int s8[] = { -0}; //=> 1
     size_t l8 = (sizeof(s8) / sizeof(s8[0]));
     minInitialPower = cMan.minInitialPower(l8, s8, 1);
     XCTAssertEqual(minInitialPower, 1);
