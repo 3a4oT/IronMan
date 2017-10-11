@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2DA2971F8E121E00DEE50F /* IronCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2DA2961F8E121E00DEE50F /* IronCTests.m */; };
+		FB2DA29E1F8E138600DEE50F /* IronCMan.c in Sources */ = {isa = PBXBuildFile; fileRef = FB2DA29D1F8E138600DEE50F /* IronCMan.c */; };
+		FB2DA29F1F8E138600DEE50F /* IronCMan.c in Sources */ = {isa = PBXBuildFile; fileRef = FB2DA29D1F8E138600DEE50F /* IronCMan.c */; };
+		FB2DA2A01F8E275B00DEE50F /* MutableArray.c in Sources */ = {isa = PBXBuildFile; fileRef = FBB02F271F8B6B5800EA75DA /* MutableArray.c */; };
 		FBB02F201F8B641F00EA75DA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FBB02F1F1F8B641F00EA75DA /* main.c */; };
 		FBB02F281F8B6B5800EA75DA /* MutableArray.c in Sources */ = {isa = PBXBuildFile; fileRef = FBB02F271F8B6B5800EA75DA /* MutableArray.c */; };
 /* End PBXBuildFile section */
@@ -25,6 +29,12 @@
 
 /* Begin PBXFileReference section */
 		FB2130811F8D271F00FC64EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB2DA28B1F8E11B900DEE50F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB2DA2941F8E121E00DEE50F /* IronCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IronCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2DA2961F8E121E00DEE50F /* IronCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IronCTests.m; sourceTree = "<group>"; };
+		FB2DA2981F8E121E00DEE50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2DA29C1F8E138600DEE50F /* IronCMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IronCMan.h; sourceTree = "<group>"; };
+		FB2DA29D1F8E138600DEE50F /* IronCMan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IronCMan.c; sourceTree = "<group>"; };
 		FBB02F1C1F8B641F00EA75DA /* IronMan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IronMan; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB02F1F1F8B641F00EA75DA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FBB02F261F8B6B5800EA75DA /* MutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutableArray.h; sourceTree = "<group>"; };
@@ -33,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB2DA2911F8E121E00DEE50F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBB02F191F8B641F00EA75DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,12 +60,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB2DA28A1F8E11B900DEE50F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				FB2DA28B1F8E11B900DEE50F /* main.m */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		FB2DA2951F8E121E00DEE50F /* IronCTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB2DA2961F8E121E00DEE50F /* IronCTests.m */,
+				FB2DA2981F8E121E00DEE50F /* Info.plist */,
+			);
+			path = IronCTests;
+			sourceTree = "<group>";
+		};
 		FBB02F131F8B641E00EA75DA = {
 			isa = PBXGroup;
 			children = (
 				FB2130811F8D271F00FC64EE /* README.md */,
 				FBB02F291F8BA63700EA75DA /* .gitignore */,
 				FBB02F1E1F8B641F00EA75DA /* IronMan */,
+				FB2DA28A1F8E11B900DEE50F /* test */,
+				FB2DA2951F8E121E00DEE50F /* IronCTests */,
 				FBB02F1D1F8B641F00EA75DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB02F1C1F8B641F00EA75DA /* IronMan */,
+				FB2DA2941F8E121E00DEE50F /* IronCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +104,8 @@
 				FBB02F1F1F8B641F00EA75DA /* main.c */,
 				FBB02F261F8B6B5800EA75DA /* MutableArray.h */,
 				FBB02F271F8B6B5800EA75DA /* MutableArray.c */,
+				FB2DA29C1F8E138600DEE50F /* IronCMan.h */,
+				FB2DA29D1F8E138600DEE50F /* IronCMan.c */,
 			);
 			path = IronMan;
 			sourceTree = "<group>";
@@ -74,6 +113,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FB2DA2931F8E121E00DEE50F /* IronCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB2DA2991F8E121E00DEE50F /* Build configuration list for PBXNativeTarget "IronCTests" */;
+			buildPhases = (
+				FB2DA2901F8E121E00DEE50F /* Sources */,
+				FB2DA2911F8E121E00DEE50F /* Frameworks */,
+				FB2DA2921F8E121E00DEE50F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IronCTests;
+			productName = IronCTests;
+			productReference = FB2DA2941F8E121E00DEE50F /* IronCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FBB02F1B1F8B641F00EA75DA /* IronMan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBB02F231F8B641F00EA75DA /* Build configuration list for PBXNativeTarget "IronMan" */;
@@ -99,6 +155,10 @@
 			attributes = {
 				LastUpgradeCheck = 0900;
 				TargetAttributes = {
+					FB2DA2931F8E121E00DEE50F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
 					FBB02F1B1F8B641F00EA75DA = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Manual;
@@ -118,23 +178,75 @@
 			projectRoot = "";
 			targets = (
 				FBB02F1B1F8B641F00EA75DA /* IronMan */,
+				FB2DA2931F8E121E00DEE50F /* IronCTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		FB2DA2921F8E121E00DEE50F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		FB2DA2901F8E121E00DEE50F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2DA2A01F8E275B00DEE50F /* MutableArray.c in Sources */,
+				FB2DA29F1F8E138600DEE50F /* IronCMan.c in Sources */,
+				FB2DA2971F8E121E00DEE50F /* IronCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBB02F181F8B641F00EA75DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FBB02F201F8B641F00EA75DA /* main.c in Sources */,
 				FBB02F281F8B6B5800EA75DA /* MutableArray.c in Sources */,
+				FB2DA29E1F8E138600DEE50F /* IronCMan.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FB2DA29A1F8E121E00DEE50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IronCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rovenskyi.IronCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		FB2DA29B1F8E121E00DEE50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IronCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rovenskyi.IronCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
 		FBB02F211F8B641F00EA75DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -263,6 +375,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB2DA2991F8E121E00DEE50F /* Build configuration list for PBXNativeTarget "IronCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2DA29A1F8E121E00DEE50F /* Debug */,
+				FB2DA29B1F8E121E00DEE50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FBB02F171F8B641E00EA75DA /* Build configuration list for PBXProject "IronMan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
