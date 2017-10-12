@@ -1,4 +1,4 @@
-###  IronMan Task
+###  IronMan Task [![Build Status](https://travis-ci.org/3a4oT/IronMan.svg?branch=master)](https://travis-ci.org/3a4oT/IronMan)
 
 IronMan is ready for battle! He starts his battle at location *0* moves in *1-unit* increments toward his final showdown at location *n−1*. Each location i has a power value, *pi*. **If pi < 0**, then there is an enemy at location **i** that he must lose **pi** power to beat; **if pi ≥ 0**, then he will restore pi power at location i. IronMan dies if his armor charge becomes < 1 at any point either during or after a fight, so he needs a proper initial charge to survive all possible fights in his battle traveling from location 0 to location n−1. Help him find the minimum charge needed to survive all fights in the battle!
 
