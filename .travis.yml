@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode9
+xcode_project: IronMan.xcodeproj
+xcode_scheme: IronMan
+before_script:
+    sudo gem install xcpretty
+script:
+    xcodebuild -project IronMan.xcodeproj -scheme IronMan -sdk macosx10.13 -configuration Debug test | xcpretty
